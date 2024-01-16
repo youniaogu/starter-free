@@ -21,7 +21,15 @@ export function HomeScreen() {
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" bc="$background">
-        <H1 ta="center">Welcome to Tamagui.</H1>
+        <H1 ta="center" color={'$red'}>
+          $red
+        </H1>
+        <H1 ta="center" color={'$color.red'}>
+          $color.red
+        </H1>
+        <H1 ta="center" color={'$custome.blue'}>
+          $custome.blue
+        </H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
           same code on Next.js and React Native.

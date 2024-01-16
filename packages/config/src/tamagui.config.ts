@@ -66,7 +66,16 @@ export const config = createTamagui({
     allowedStyleValues: 'somewhat-strict',
   },
   themes,
-  tokens,
+  tokens: {
+    ...tokens,
+    color: {
+      ...tokens.color,
+      red: 'red',
+    },
+    custome: {
+      blue: 'blue',
+    },
+  },
   media: createMedia({
     xs: { maxWidth: 660 },
     sm: { maxWidth: 800 },
