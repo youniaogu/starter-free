@@ -8,6 +8,8 @@ import {
   useToastController,
   XStack,
   YStack,
+  Input,
+  StyledInput,
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
@@ -21,6 +23,25 @@ export function HomeScreen() {
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" bc="$background">
+        <Input
+          placeholder="Work"
+          onFocus={() => {
+            console.log('Input on focus')
+          }}
+          onBlur={() => {
+            console.log('Input on blur')
+          }}
+        />
+        <StyledInput
+          placeholder="no work"
+          onFocus={() => {
+            console.log('StyledInput on focus')
+          }}
+          onBlur={() => {
+            console.log('StyledInput on blur')
+          }}
+        />
+
         <H1 ta="center" color={'$red'}>
           $red
         </H1>
